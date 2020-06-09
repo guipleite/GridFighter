@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMove : TacticsMove
 {
     // Start is called before the first frame update
+    public bool isAttacking = false;
+
     void Start()
     {
         Init();
@@ -17,12 +19,25 @@ public class PlayerMove : TacticsMove
             return;
         }
 
-        else if (!moving){
+        else if (!moving && !attacking){
             FindSelectableTiles();
             CheckClick();
         }
         
-        else{Move();}
+        else if (attacking){
+            if(!isAttacking){
+                isAttacking = true;            
+
+                FindSelectableTiles();
+            }
+            else{CheckClick();
+            Attack();
+            }
+        }
+        else{
+            isAttacking = false;
+            Move();
+        }
     }
 
      void CheckClick(){

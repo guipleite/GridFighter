@@ -36,7 +36,7 @@ public class Tile : MonoBehaviour
 
         }
         else if(selectable){
-            GetComponent<Renderer>().material.color = Color.blue;
+            GetComponent<Renderer>().material.color = Color.cyan;
 
         }
         else{

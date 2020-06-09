@@ -11,7 +11,6 @@ public class TurnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("oi");
     }
 
     // Update is called once per frame

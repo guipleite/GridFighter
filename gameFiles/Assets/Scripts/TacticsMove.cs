@@ -21,6 +21,9 @@ public class TacticsMove : MonoBehaviour
     float halfHeight = 0;
     public bool moving = false;
     public bool turn = false;
+    public bool attacking = false;
+    public int attackRange = 1;
+
 
     public Tile actualTargetTile;
 
@@ -61,9 +64,11 @@ public class TacticsMove : MonoBehaviour
     }
     
     public void FindSelectableTiles(){
-
         ComputeAdjacencyLists(jumpHeight,null);
         GetCurrentTile();
+        int range;
+        if(attacking) {range = attackRange;}
+        else {range = moveRange;}
 
         Queue<Tile> process = new Queue<Tile>();
 
@@ -71,16 +76,14 @@ public class TacticsMove : MonoBehaviour
         currentTile.processed = true;
 
         while (process.Count>0){
-
             Tile t = process.Dequeue();
 
             selectableTiles.Add(t);
             t.selectable = true;
 
-            if (t.distance <moveRange){
+            if (t.distance <range){
                 foreach (Tile tile in t.adjacencyList){
                     if (!tile.processed){
-
                         tile.parent = t;
                         tile.processed = true;
                         tile.distance = 1 + t.distance;
@@ -133,7 +136,59 @@ public class TacticsMove : MonoBehaviour
         else{
             RemoveSelectableTiles();
             moving = false;
-            //TODO: ADD COMBAT
+            attacking = true;
+        }
+    }
+    public void Attack(){
+        Debug.Log( this.tag);
+        if (path.Count> 0){
+            Tile t = path.Peek();
+            Vector3 target = t.transform.position;
+
+            target.y += halfHeight+t.GetComponent<Collider>().bounds.extents.y;
+
+            if (Vector3.Distance(transform.position,target)>= 0.05f){
+
+                CalculateHeading(target);
+                velocity = heading * moveSpeed;
+
+                // TODO: ADD ANIMATIONS
+                transform.forward = heading;
+                transform.position += velocity*Time.deltaTime;
+            }
+
+            else{
+                transform.position = target;
+                path.Pop();
+            }
+        }
+        else if ( this.tag == "Player"  && attacking){
+            Tile t = path.Peek();
+            Vector3 target = t.transform.position;
+
+            target.y += halfHeight+t.GetComponent<Collider>().bounds.extents.y;
+
+            if (Vector3.Distance(transform.position,target)>= 0.05f){
+
+                CalculateHeading(target);
+                velocity = heading * moveSpeed;
+
+                // TODO: ADD ANIMATIONS
+                transform.forward = heading;
+                transform.position += velocity*Time.deltaTime;
+            }
+
+            else{
+                transform.position = target;
+                path.Pop();
+            }
+            attacking = false;
+        }
+        else{
+            RemoveSelectableTiles();
+            attacking = false;
+            moving = false;
+
             TurnManager.EndTurn();
         }
     }
@@ -163,6 +218,8 @@ public class TacticsMove : MonoBehaviour
 
     public void EndTurn(){
         turn = false;
+        attacking = false;
+
     }
 
     protected Tile FindLowestF(List<Tile> list){
@@ -181,6 +238,10 @@ public class TacticsMove : MonoBehaviour
     }
 
     protected Tile FindEndTile(Tile t){
+        int range;
+        if(attacking) {range = attackRange;}
+        else {range = moveRange;}
+
         Stack<Tile> tempPath = new Stack<Tile>();
 
         Tile next = t.parent;
@@ -189,20 +250,19 @@ public class TacticsMove : MonoBehaviour
             next = next.parent;
         }
 
-        if (tempPath.Count <= moveRange){
+        if (tempPath.Count <= range){
             return t.parent;
         }
 
         Tile endTile = null;
-        for (int i = 0; i <= moveRange; i++){
+        for (int i = 0; i <= range; i++){
             endTile = tempPath.Pop();
         }
 
         return endTile;
     }
 
-    protected void FindPath(Tile target)
-    {
+    protected void FindPath(Tile target){
         ComputeAdjacencyLists(jumpHeight, target);
         GetCurrentTile();
 

@@ -6,6 +6,8 @@ public class NPCMove : TacticsMove
 {
     GameObject target;
 
+    public bool isAttacking = false;
+
 	void Start () 
 	{
         Init();
@@ -19,14 +21,28 @@ public class NPCMove : TacticsMove
             return;
         }
 
-        else if (!moving){
+        else if (!moving && !attacking){
             FindNearestTarget();
             CalculatePath();
             FindSelectableTiles();
             actualTargetTile.target = true;
         }
+
+        else if (attacking){
+            if(!isAttacking){
+                isAttacking = true;
+                FindNearestTarget();
+                CalculatePath();
+                FindSelectableTiles();
+                actualTargetTile.target = true;
+            }
+             Attack();
+        }
+
         else{
+            isAttacking = false;
             Move();
+            actualTargetTile.target = false;
         }
 	}
 
