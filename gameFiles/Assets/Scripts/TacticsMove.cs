@@ -6,8 +6,9 @@ public class TacticsMove : MonoBehaviour
 {   
    
     public int moveRange = 4;
-    public float jumpHeight = 1;
+    public float jumpHeight = 0;
     public float moveSpeed = 2;
+    public int c = 0;
 
     Vector3 velocity = new Vector3();
     Vector3 heading = new Vector3();
@@ -139,9 +140,11 @@ public class TacticsMove : MonoBehaviour
             attacking = true;
         }
     }
+
     public void Attack(){
-        Debug.Log( this.tag);
+
         if (path.Count> 0){
+
             Tile t = path.Peek();
             Vector3 target = t.transform.position;
 
@@ -161,30 +164,17 @@ public class TacticsMove : MonoBehaviour
                 transform.position = target;
                 path.Pop();
             }
+            c+=1;
         }
-        else if ( this.tag == "Player"  && attacking){
-            Tile t = path.Peek();
-            Vector3 target = t.transform.position;
 
-            target.y += halfHeight+t.GetComponent<Collider>().bounds.extents.y;
-
-            if (Vector3.Distance(transform.position,target)>= 0.05f){
-
-                CalculateHeading(target);
-                velocity = heading * moveSpeed;
-
-                // TODO: ADD ANIMATIONS
-                transform.forward = heading;
-                transform.position += velocity*Time.deltaTime;
-            }
-
-            else{
-                transform.position = target;
-                path.Pop();
-            }
+        else if( c > 0 && this.tag=="Player"){
+            RemoveSelectableTiles();
             attacking = false;
+            moving = false;
+
+            TurnManager.EndTurn();
         }
-        else{
+        else if(this.tag=="NPC"){
             RemoveSelectableTiles();
             attacking = false;
             moving = false;
@@ -279,7 +269,7 @@ public class TacticsMove : MonoBehaviour
 
             closedList.Add(t);
 
-            if (t == target){
+            if (t == target ){
                 actualTargetTile = FindEndTile(t);
                 MoveToTile(actualTargetTile);
                 return;

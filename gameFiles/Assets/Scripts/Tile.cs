@@ -28,21 +28,13 @@ public class Tile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(current){
-            GetComponent<Renderer>().material.color = Color.gray;
-        }
-        else if(target){
-            GetComponent<Renderer>().material.color = Color.green;
-
-        }
-        else if(selectable){
-            GetComponent<Renderer>().material.color = Color.cyan;
-
-        }
-        else{
-            GetComponent<Renderer>().material.color = Color.white;
-
-        }
+        if(current){GetComponent<Renderer>().material.color = Color.gray;}
+        
+        else if(target){GetComponent<Renderer>().material.color = Color.green;}
+        
+        else if(selectable){GetComponent<Renderer>().material.color = Color.cyan;}
+        
+        else{GetComponent<Renderer>().material.color = Color.white;}
     }
 
     public void  Reset() {
@@ -51,8 +43,6 @@ public class Tile : MonoBehaviour
         current = false;
         target = false;
         selectable = false;
-        // walkable = true;
-
         processed = false;
         parent = null;
         distance = 0; 
