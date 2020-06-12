@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tile : MonoBehaviour
+public class Tile : TacticsMove
 {
     public bool current = false;
     public bool target = false;
@@ -51,13 +51,14 @@ public class Tile : MonoBehaviour
     }
 
     public void FindNeighbors(float jumpHeight,Tile target){
+        Debug.Log("findnwi");
+
         Reset();
 
         CheckTile(Vector3.forward, jumpHeight, target);
         CheckTile(-Vector3.forward, jumpHeight, target);
         CheckTile(Vector3.right, jumpHeight, target);
         CheckTile(-Vector3.right, jumpHeight, target);
-
     }
 
     public void CheckTile(Vector3 direction, float jumpHeight, Tile target){
@@ -71,7 +72,13 @@ public class Tile : MonoBehaviour
             if (tile != null && tile.walkable){
                 RaycastHit hit;
 
-                if (!Physics.Raycast(tile.transform.position, Vector3.up, out hit, 1) || (tile == target)){
+                if(attacking ){
+                    Debug.Log("dsa");
+                    // if(&& (tile == target))
+                    adjacencyList.Add(tile);
+                }
+
+                else if (!Physics.Raycast(tile.transform.position, Vector3.up, out hit, 1) || (tile == target)){
                     adjacencyList.Add(tile);
                 }
             }

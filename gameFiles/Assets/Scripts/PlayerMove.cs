@@ -53,13 +53,25 @@ public class PlayerMove : TacticsMove
             RaycastHit hit;
             if (Physics.Raycast(ray,out hit)){
 
-                if (hit.collider.tag == "Tile"){//// TODO : ATTACK
+                if (hit.collider.tag == "Tile"){
 
                     Tile t = hit.collider.GetComponent<Tile>();
 
                     if (t.selectable){
                         MoveToTile(t);
                     }
+                }
+                if (hit.collider.tag == "NPC" && attacking){//// TODO : ATTACK
+
+                //  Tile t = hit.collider.GetComponent<Tile>();
+
+                //     if (t.selectable){
+
+                    GameObject.Destroy(hit.collider.gameObject);
+                    Debug.Log("ASS");//}
+                        // MoveToTile(hit.collider.gameObject);
+                    
+
                 }
             }
         }

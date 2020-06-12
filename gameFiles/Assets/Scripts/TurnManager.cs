@@ -33,7 +33,12 @@ public class TurnManager : MonoBehaviour
 
     public static void StartTurn(){
         if (turnTeam.Count > 0){
-            turnTeam.Peek().BeginTurn();
+            if(turnTeam.Peek()!= null){
+                turnTeam.Peek().BeginTurn();
+            }
+            else{
+                EndTurn();
+            }
         }
     }
 
