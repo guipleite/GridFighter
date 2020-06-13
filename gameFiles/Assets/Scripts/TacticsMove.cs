@@ -24,6 +24,7 @@ public class TacticsMove : MonoBehaviour
     public bool turn = false;
     public bool attacking = false;
     public int attackRange = 1;
+    public bool attackDone = false;
 
 
     public Tile actualTargetTile;
@@ -62,7 +63,7 @@ public class TacticsMove : MonoBehaviour
 
         foreach (GameObject tile in tiles){
             Tile t = tile.GetComponent<Tile>();
-            t.FindNeighbors(jumpHeight,target);
+            t.FindNeighbors(jumpHeight,target,attacking);
         }
     }
     
@@ -164,11 +165,20 @@ public class TacticsMove : MonoBehaviour
                 transform.position += velocity*Time.deltaTime;
             }
 
+
             else{
                 transform.position = target;
                 path.Pop();
             }
             c+=1;
+        }
+        else if(attackDone){
+            RemoveSelectableTiles();
+            attacking = false;
+            moving = false;
+            attackDone = false;
+
+            TurnManager.EndTurn();
         }
 
         else if( c > 0 && this.tag=="Player"){

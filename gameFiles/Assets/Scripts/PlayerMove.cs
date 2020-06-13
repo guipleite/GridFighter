@@ -51,6 +51,7 @@ public class PlayerMove : TacticsMove
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             RaycastHit hit;
+            
             if (Physics.Raycast(ray,out hit)){
 
                 if (hit.collider.tag == "Tile"){
@@ -58,20 +59,21 @@ public class PlayerMove : TacticsMove
                     Tile t = hit.collider.GetComponent<Tile>();
 
                     if (t.selectable){
-                        MoveToTile(t);
+                        if(attacking){
+                            Physics.Raycast(t.transform.position, Vector3.up, out hit, 1);
+                            if(hit.collider.tag=="NPC"){                            
+                                GameObject.Destroy(hit.collider.gameObject);
+                                attackDone=true;
+
+                            }
+                            else{                        
+                                MoveToTile(t);
+                            }
+                        }
+                        else{                        
+                            MoveToTile(t);
+                        }
                     }
-                }
-                if (hit.collider.tag == "NPC" && attacking){//// TODO : ATTACK
-
-                //  Tile t = hit.collider.GetComponent<Tile>();
-
-                //     if (t.selectable){
-
-                    GameObject.Destroy(hit.collider.gameObject);
-                    Debug.Log("ASS");//}
-                        // MoveToTile(hit.collider.gameObject);
-                    
-
                 }
             }
         }

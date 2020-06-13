@@ -50,32 +50,37 @@ public class Tile : TacticsMove
         f = g = h = 0;
     }
 
-    public void FindNeighbors(float jumpHeight,Tile target){
-        Debug.Log("findnwi");
-
+    public void FindNeighbors(float jumpHeight,Tile target,bool attacking){
         Reset();
 
-        CheckTile(Vector3.forward, jumpHeight, target);
-        CheckTile(-Vector3.forward, jumpHeight, target);
-        CheckTile(Vector3.right, jumpHeight, target);
-        CheckTile(-Vector3.right, jumpHeight, target);
+        CheckTile(Vector3.forward, jumpHeight, target, attacking);
+        CheckTile(-Vector3.forward, jumpHeight, target, attacking);
+        CheckTile(Vector3.right, jumpHeight, target, attacking);
+        CheckTile(-Vector3.right, jumpHeight, target, attacking);
     }
 
-    public void CheckTile(Vector3 direction, float jumpHeight, Tile target){
+    public void CheckTile(Vector3 direction, float jumpHeight, Tile target, bool attacking){
 
         Vector3 halfExtents = new Vector3(0.25f, (1 + jumpHeight) / 2.0f, 0.25f);
         Collider[] colliders = Physics.OverlapBox(transform.position + direction, halfExtents);
 
         foreach (Collider item in colliders){
+
             Tile tile = item.GetComponent<Tile>();
 
             if (tile != null && tile.walkable){
                 RaycastHit hit;
 
                 if(attacking ){
-                    Debug.Log("dsa");
-                    // if(&& (tile == target))
-                    adjacencyList.Add(tile);
+                    Physics.Raycast(tile.transform.position, Vector3.up, out hit, 1);
+                    if(hit.collider){
+                        if (hit.collider.tag=="NPC"){
+                            Debug.Log(attacking);
+
+                            adjacencyList.Add(tile);
+
+                        } 
+                    }
                 }
 
                 else if (!Physics.Raycast(tile.transform.position, Vector3.up, out hit, 1) || (tile == target)){
