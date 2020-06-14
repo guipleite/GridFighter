@@ -7,6 +7,7 @@ public class NPCMove : TacticsMove
     GameObject target;
 
     public bool isAttacking = false;
+    public bool canKill = false;
 
 	void Start () 
 	{
@@ -36,7 +37,7 @@ public class NPCMove : TacticsMove
                 FindSelectableTiles();
                 actualTargetTile.target = true;
             }
-             Attack();
+            Attack();
         }
 
         else{
@@ -63,8 +64,17 @@ public class NPCMove : TacticsMove
             if (d < distance) {
                 distance = d;
                 nearest = obj;
+                if(d==1 && attacking){
+                    Debug.Log("can kill");
+                    canKill = true;
+                }
             }
         }
         target = nearest;
+
+        if(canKill){
+            GameObject.Destroy(target);
+            canKill=false;
+        }
     }
 }

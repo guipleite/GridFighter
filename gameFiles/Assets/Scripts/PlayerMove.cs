@@ -64,7 +64,6 @@ public class PlayerMove : TacticsMove
                             if(hit.collider.tag=="NPC"){                            
                                 GameObject.Destroy(hit.collider.gameObject);
                                 attackDone=true;
-
                             }
                             else{                        
                                 MoveToTile(t);

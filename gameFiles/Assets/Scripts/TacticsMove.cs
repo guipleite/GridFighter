@@ -58,8 +58,6 @@ public class TacticsMove : MonoBehaviour
     }
 
     public void ComputeAdjacencyLists(float jumpHeight,Tile target){
-        Debug.Log("Sel");
-
 
         foreach (GameObject tile in tiles){
             Tile t = tile.GetComponent<Tile>();
@@ -68,7 +66,7 @@ public class TacticsMove : MonoBehaviour
     }
     
     public void FindSelectableTiles(){
-        Debug.Log("Sel");
+
         ComputeAdjacencyLists(jumpHeight,null);
         GetCurrentTile();
 

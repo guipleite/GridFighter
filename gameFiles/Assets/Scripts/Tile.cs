@@ -75,10 +75,7 @@ public class Tile : TacticsMove
                     Physics.Raycast(tile.transform.position, Vector3.up, out hit, 1);
                     if(hit.collider){
                         if (hit.collider.tag=="NPC"){
-                            Debug.Log(attacking);
-
                             adjacencyList.Add(tile);
-
                         } 
                     }
                 }
