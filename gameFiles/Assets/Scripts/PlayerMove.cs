@@ -77,23 +77,7 @@ public class PlayerMove : TacticsMove
             }
         }
     }
-    void FindNearestTarget(){
-        GameObject[] targets = GameObject.FindGameObjectsWithTag("NPC");
-
-        GameObject nearest = null;
-        float distance = Mathf.Infinity;
-
-        foreach (GameObject obj in targets) {
-            float d = Vector3.Distance(transform.position, obj.transform.position);
-
-            if (d < distance) {
-                distance = d;
-                nearest = obj;
-            }
-        }
-        target = nearest;
-    }
-
+   
     void CalculatePath(){
         Tile targetTile = GetTargetTile(target);
         FindPath(targetTile);

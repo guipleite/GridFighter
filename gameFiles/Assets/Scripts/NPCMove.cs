@@ -19,6 +19,7 @@ public class NPCMove : TacticsMove
         Debug.DrawRay(transform.position, transform.forward);
 
         if (!turn){
+
             return;
         }
 
@@ -48,8 +49,14 @@ public class NPCMove : TacticsMove
 	}
 
     void CalculatePath(){
+
+        if(canKill){
+            GameObject.Destroy(target);
+            canKill=false;
+            attackDone=true;
+        }
         Tile targetTile = GetTargetTile(target);
-        FindPath(targetTile);
+        FindPath(targetTile);   
     }
 
     void FindNearestTarget(){
@@ -67,14 +74,10 @@ public class NPCMove : TacticsMove
                 if(d==1 && attacking){
                     Debug.Log("can kill");
                     canKill = true;
+                    attacking=false;
                 }
             }
         }
         target = nearest;
-
-        if(canKill){
-            GameObject.Destroy(target);
-            canKill=false;
-        }
     }
 }

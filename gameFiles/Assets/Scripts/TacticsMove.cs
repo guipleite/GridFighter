@@ -171,6 +171,7 @@ public class TacticsMove : MonoBehaviour
             c+=1;
         }
         else if(attackDone){
+            Debug.Log("DNoes");
             RemoveSelectableTiles();
             attacking = false;
             moving = false;
@@ -182,14 +183,18 @@ public class TacticsMove : MonoBehaviour
         else if( c > 0 && this.tag=="Player"){
             RemoveSelectableTiles();
             attacking = false;
-            moving = false;
+            moving = false;           
+            attackDone = false;
 
             TurnManager.EndTurn();
         }
+
         else if(this.tag=="NPC"){
             RemoveSelectableTiles();
             attacking = false;
             moving = false;
+            attackDone = false;
+
 
             TurnManager.EndTurn();
         }
@@ -216,6 +221,8 @@ public class TacticsMove : MonoBehaviour
 
     public void BeginTurn(){
         turn = true;
+        Debug.Log("BEGINS");
+
     }
 
     public void EndTurn(){
