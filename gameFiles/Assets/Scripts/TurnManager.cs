@@ -1,19 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class TurnManager : MonoBehaviour
 {
-    static Dictionary<string,List<TacticsMove>> units = new Dictionary<string, List<TacticsMove>>();
+    public static Dictionary<string,List<TacticsMove>> units = new Dictionary<string, List<TacticsMove>>();
     static Queue<string> turnKey = new Queue<string>();
     static Queue<TacticsMove> turnTeam = new Queue<TacticsMove>();
+    public static TurnManager instance;
 
+    
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
     }
 
-    // Update is called once per frame
+    void Awake(){
+        units = new Dictionary<string, List<TacticsMove>>();
+        turnKey = new Queue<string>();
+        turnTeam = new Queue<TacticsMove>();
+    }
+    // Update is called once per frame         
     void Update()
     {
         if (turnTeam.Count == 0){
@@ -23,42 +31,39 @@ public class TurnManager : MonoBehaviour
 
     static void InitTeamTurnQueue(){
         List<TacticsMove> teamList = units[turnKey.Peek()];
+        // if(units)
 
-        foreach (TacticsMove unit in teamList){      
-
+        foreach (TacticsMove unit in teamList){     
             turnTeam.Enqueue(unit);
-        }
 
-        StartTurn();
+        }
+                    //    
+            StartTurn();
     }
 
     public static void StartTurn(){
         if (turnTeam.Count > 0){
 
-            if(turnTeam.Peek()!= null){
-
-                turnTeam.Peek().BeginTurn();
+            if(turnTeam.Peek()!= null && turnTeam.Peek().name != "DEAD"){
+                    turnTeam.Peek().BeginTurn();
             }
 
             else{
                 EndTurn();
             }
         }
+        else{Debug.Log("ASDD");}
     }
 
     public static void EndTurn(){
         TacticsMove unit = turnTeam.Dequeue();
         unit.EndTurn();
 
-
         if (turnTeam.Count > 0){
-
             StartTurn();
         }
 
         else{
-            Debug.Log("acab");
-
             string team = turnKey.Dequeue();
             turnKey.Enqueue(team);
             InitTeamTurnQueue();

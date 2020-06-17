@@ -9,8 +9,11 @@ public class PlayerMove : TacticsMove
     // Start is called before the first frame update
     public bool isAttacking = false;
 
+    public static PlayerMove instance;
+
     void Start()
     {
+        instance = this;
         Init();
     }
 
@@ -61,9 +64,12 @@ public class PlayerMove : TacticsMove
                     if (t.selectable){
                         if(attacking){
                             Physics.Raycast(t.transform.position, Vector3.up, out hit, 1);
-                            if(hit.collider.tag=="NPC"){                            
+                            if(hit.collider.tag=="NPC"){       
+                                hit.collider.gameObject.name = "DEAD";             
                                 GameObject.Destroy(hit.collider.gameObject);
                                 attackDone=true;
+                                GameManager.NPCChars--;
+                                GameManager.totalKills++;
                             }
                             else{                        
                                 MoveToTile(t);

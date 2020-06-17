@@ -224,6 +224,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -348,6 +349,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -472,6 +474,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -596,6 +599,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -720,6 +724,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -844,6 +849,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -968,6 +974,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -1092,6 +1099,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -1216,6 +1224,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -1340,6 +1349,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -1464,6 +1474,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -1588,6 +1599,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -1712,6 +1724,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -1905,6 +1918,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -2029,6 +2043,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -2153,6 +2168,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -2277,6 +2293,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -2401,6 +2418,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -2525,6 +2543,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -2649,6 +2668,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -2773,6 +2793,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -2897,6 +2918,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -3021,6 +3043,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -3145,6 +3168,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -3311,6 +3335,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -3435,6 +3460,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -3559,6 +3585,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -3683,6 +3710,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -3807,6 +3835,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -3997,6 +4026,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -4163,6 +4193,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -4287,6 +4318,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -4411,6 +4443,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -4535,6 +4568,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -4659,6 +4693,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -4865,6 +4900,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -4989,6 +5025,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -5113,6 +5150,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -5279,6 +5317,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -5403,6 +5442,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -5527,6 +5567,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -5651,6 +5692,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -5775,6 +5817,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -5899,6 +5942,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -6023,6 +6067,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -6147,6 +6192,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -6271,6 +6317,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -6395,6 +6442,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -6561,6 +6609,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -6685,6 +6734,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -6809,6 +6859,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -6975,6 +7026,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -7099,6 +7151,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -7223,6 +7276,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -7347,6 +7401,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -7471,6 +7526,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -7595,6 +7651,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -7719,6 +7776,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -7843,6 +7901,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -7967,6 +8026,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -8091,6 +8151,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -8215,6 +8276,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -8339,6 +8401,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -8463,6 +8526,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -8587,6 +8651,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -8711,6 +8776,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -8914,6 +8980,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -9038,6 +9105,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -9162,6 +9230,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -9286,6 +9355,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -9410,6 +9480,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -9534,6 +9605,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -9658,6 +9730,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -9824,6 +9897,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -9948,6 +10022,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -10072,6 +10147,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -10196,6 +10272,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -10420,6 +10497,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -10544,6 +10622,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -10668,6 +10747,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -10792,6 +10872,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -10916,6 +10997,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -11040,6 +11122,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -11164,6 +11247,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -11288,6 +11372,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -11412,6 +11497,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -11536,6 +11622,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -11660,6 +11747,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -11784,6 +11872,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -11908,6 +11997,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -11960,6 +12050,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   isAttacking: 0
 --- !u!136 &1353505287
@@ -12029,7 +12120,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353505285}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: 1.4999998, z: 2}
+  m_LocalPosition: {x: 7, y: 1.4999998, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12147,6 +12238,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -12271,6 +12363,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -12437,6 +12530,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -12561,6 +12655,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -12613,8 +12708,10 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   isAttacking: 0
+  canKill: 0
 --- !u!136 &1414279416
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12698,6 +12795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1439080864}
   - component: {fileID: 1439080865}
+  - component: {fileID: 1439080866}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -12741,6 +12839,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c8ea46a912f6389faf514cae38bdbc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1439080866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439080863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7dc3cfc05c1acf4db0b60d5383cb8ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1440480963
@@ -12855,6 +12965,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -12979,6 +13090,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -13145,6 +13257,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -13269,6 +13382,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -13393,6 +13507,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -13517,6 +13632,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -13641,6 +13757,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -13693,8 +13810,10 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   isAttacking: 0
+  canKill: 0
 --- !u!136 &1676429399
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13880,6 +13999,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -14122,6 +14242,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -14246,6 +14367,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -14370,6 +14492,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -14494,6 +14617,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -14660,6 +14784,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -14826,6 +14951,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -14925,7 +15051,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778312879}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6, y: 1.4999998, z: 0}
+  m_LocalPosition: {x: 7, y: 1.4999998, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14951,6 +15077,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 5
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   isAttacking: 0
 --- !u!1 &1788656191
@@ -15065,6 +15192,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -15189,6 +15317,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -15313,6 +15442,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -15437,6 +15567,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -15561,6 +15692,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -15727,6 +15859,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -15851,6 +15984,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -15975,6 +16109,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -16217,6 +16352,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -16341,6 +16477,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -16465,6 +16602,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -16589,6 +16727,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -16713,6 +16852,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -16837,6 +16977,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -16961,6 +17102,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -17085,6 +17227,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -17209,6 +17352,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -17333,6 +17477,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -17457,6 +17602,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -17581,6 +17727,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -17747,6 +17894,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -17871,6 +18019,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -17995,6 +18144,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -18119,6 +18269,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -18243,6 +18394,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -18367,6 +18519,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -18491,6 +18644,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -18615,6 +18769,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -18818,6 +18973,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -18942,6 +19098,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -19066,6 +19223,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -19190,6 +19348,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -19314,6 +19473,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -19438,6 +19598,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -19562,6 +19723,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0
@@ -19686,6 +19848,7 @@ MonoBehaviour:
   turn: 0
   attacking: 0
   attackRange: 1
+  attackDone: 0
   actualTargetTile: {fileID: 0}
   current: 0
   target: 0

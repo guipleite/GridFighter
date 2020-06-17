@@ -9,6 +9,8 @@ public class TacticsMove : MonoBehaviour
     public float jumpHeight = 0;
     public float moveSpeed = 2;
     public int c = 0;
+    public static TacticsMove instance;
+
 
     Vector3 velocity = new Vector3();
     Vector3 heading = new Vector3();
@@ -30,6 +32,9 @@ public class TacticsMove : MonoBehaviour
     public Tile actualTargetTile;
 
     // Start is called before the first frame update
+    void Start(){
+        instance = this;
+    }
     protected void Init(){
 
         tiles = GameObject.FindGameObjectsWithTag("Tile");
@@ -171,7 +176,6 @@ public class TacticsMove : MonoBehaviour
             c+=1;
         }
         else if(attackDone){
-            Debug.Log("DNoes");
             RemoveSelectableTiles();
             attacking = false;
             moving = false;
@@ -221,14 +225,11 @@ public class TacticsMove : MonoBehaviour
 
     public void BeginTurn(){
         turn = true;
-        Debug.Log("BEGINS");
-
     }
 
     public void EndTurn(){
         turn = false;
         attacking = false;
-
     }
 
     protected Tile FindLowestF(List<Tile> list){

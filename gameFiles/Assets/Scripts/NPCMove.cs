@@ -8,15 +8,17 @@ public class NPCMove : TacticsMove
 
     public bool isAttacking = false;
     public bool canKill = false;
+    public static NPCMove instance;
+
 
 	void Start () 
 	{
+        instance = this;
         Init();
 	}
 	
 	void Update () 
 	{
-        Debug.DrawRay(transform.position, transform.forward);
 
         if (!turn){
 
@@ -51,9 +53,11 @@ public class NPCMove : TacticsMove
     void CalculatePath(){
 
         if(canKill){
+            target.name = "DEAD";
             GameObject.Destroy(target);
             canKill=false;
             attackDone=true;
+            GameManager.PlayerChars--;
         }
         Tile targetTile = GetTargetTile(target);
         FindPath(targetTile);   
@@ -72,7 +76,6 @@ public class NPCMove : TacticsMove
                 distance = d;
                 nearest = obj;
                 if(d==1 && attacking){
-                    Debug.Log("can kill");
                     canKill = true;
                     attacking=false;
                 }
