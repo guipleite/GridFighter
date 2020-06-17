@@ -53,6 +53,8 @@ public class GameManager : MonoBehaviour
 
     void checkEndGame(){
         if(PlayerChars<=0){
+            level = 0;
+            totalKills = 0;
             Resources.UnloadUnusedAssets();
             SceneManager.LoadScene("EndGameScreenLoose");
             
@@ -62,7 +64,7 @@ public class GameManager : MonoBehaviour
     void checkEndLevel(){
         if(NPCChars<=0){
             Resources.UnloadUnusedAssets();
-            SceneManager.LoadScene("EndGameScreenLoose");
+            SceneManager.LoadScene("EndLevel");
             level++;
         }
     }

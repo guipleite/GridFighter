@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class StartGame : MonoBehaviour
 {
@@ -11,7 +11,10 @@ public class StartGame : MonoBehaviour
     private bool GameStart = false;
     public GameObject button;
 
+    private List<string> LevelList = new List<string>(new string[] { "SampleScene", "level2", "level3","level4","level5","EndGameVic" });
 
+    public GameObject Level;
+    public GameObject Kills;
     // private AudioSource audioSource;
     // public AudioClip sound;
     
@@ -32,7 +35,7 @@ public class StartGame : MonoBehaviour
         if (go ==button){
             GameStart = true;
 
-            SceneManager.LoadScene("SampleScene") ; 
+            SceneManager.LoadScene(LevelList[GameManager.level]) ; 
         }
     }
 
@@ -42,5 +45,7 @@ public class StartGame : MonoBehaviour
 
             OnButtonClick();
         }
+        Level.GetComponent<Text>().text = (""+(GameManager.level));
+        Kills.GetComponent<Text>().text = ("" + GameManager.totalKills);
     }
 }
