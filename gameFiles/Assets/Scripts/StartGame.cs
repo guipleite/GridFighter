@@ -45,7 +45,9 @@ public class StartGame : MonoBehaviour
 
             OnButtonClick();
         }
-        Level.GetComponent<Text>().text = (""+(GameManager.level));
-        Kills.GetComponent<Text>().text = ("" + GameManager.totalKills);
+        if(SceneManager.GetActiveScene().name!="MainMenu"){
+            Level.GetComponent<Text>().text = (""+(GameManager.totalKills));
+            Kills.GetComponent<Text>().text = ("" + GameManager.level);
+        }
     }
 }
