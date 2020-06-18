@@ -3,6 +3,8 @@
 O GridFighter é um jogo de combate em turnos, onde o objetivo é defender uma cidade contra o ataque de monstros, para isso, é necessário vencer ondas de inimigos.
 </br>
 
+![alt text](./Capture.JPG)
+
 Deployment: https://guipleite.github.io/GridFighter/
 </br>
 
@@ -14,4 +16,3 @@ Controles:
 
 
 
-![alt text](./Capture.JPG)
