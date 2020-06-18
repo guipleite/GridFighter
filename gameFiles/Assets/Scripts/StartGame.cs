@@ -35,6 +35,10 @@ public class StartGame : MonoBehaviour
         if (go ==button){
             GameStart = true;
 
+            if(SceneManager.GetActiveScene().name=="EndGameScreenLoose"){
+                GameManager.level = 0;
+                GameManager.totalKills = 0;
+            }
             SceneManager.LoadScene(LevelList[GameManager.level]) ; 
         }
     }
@@ -45,9 +49,10 @@ public class StartGame : MonoBehaviour
 
             OnButtonClick();
         }
-        if(SceneManager.GetActiveScene().name!="MainMenu"){
-            Level.GetComponent<Text>().text = (""+(GameManager.totalKills));
-            Kills.GetComponent<Text>().text = ("" + GameManager.level);
+        if(SceneManager.GetActiveScene().name!="MainMenu" && !GameStart){
+            Level.GetComponent<Text>().text = (""+GameManager.totalKills);
+            Kills.GetComponent<Text>().text = (""+GameManager.level);
         }
+       
     }
 }
