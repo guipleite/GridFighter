@@ -5,13 +5,14 @@ O GridFighter é um jogo de combate em turnos, onde o objetivo é defender uma c
 
 ![alt text](./Capture.JPG)
 
-Deployment: https://guipleite.itch.io/gridfighter
+Jogue aqui: https://guipleite.itch.io/gridfighter
 </br>
 
 Controles:
 
-    Para se movimentar ou atacar, clique em um dos quadrados destacados em verde, para pular a ação, clique no quadrado em cinza.
-    Para mudar o ângulo da câmera, use as setas nas laterais da tela .
+    - Para se movimentar ou atacar, clique em um dos quadrados destacados em verde.
+    - Para pular a ação, clique no quadrado em cinza.
+    - Para mudar o ângulo da câmera, use as setas nas laterais da tela .
 
 
 
