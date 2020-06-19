@@ -17,3 +17,5 @@ Controles:
 
 
 Arquivos Incluindo os Store Assets: https://alinsperedu-my.sharepoint.com/:u:/g/personal/guilhermepl3_al_insper_edu_br/EU2C6ypExNxFrQyDrGgFgTQBBWqxfEw39mfwJZ3JhqrXVg?e=bPoUq3
+
+Guilherme Leite e Gabriel Monteiro 
