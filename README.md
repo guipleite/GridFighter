@@ -5,7 +5,7 @@ O GridFighter é um jogo de combate em turnos, onde o objetivo é defender uma c
 
 ![alt text](./Capture.JPG)
 
-Deployment: https://guipleite.github.io/GridFighter/
+Deployment: https://guipleite.itch.io/gridfighter
 </br>
 
 Controles:
