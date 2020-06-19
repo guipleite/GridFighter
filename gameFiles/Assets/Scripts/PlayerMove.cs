@@ -6,8 +6,18 @@ public class PlayerMove : TacticsMove
 {
     GameObject target;
 
+    public AudioSource audio;
+    public AudioClip ataque;
+
+
     // Start is called before the first frame update
     public bool isAttacking = false;
+
+    public bool attacked;
+
+    bool dying = false;
+
+    private Animator animator;
 
     public static PlayerMove instance;
 
@@ -15,6 +25,7 @@ public class PlayerMove : TacticsMove
     {
         instance = this;
         Init();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -45,9 +56,24 @@ public class PlayerMove : TacticsMove
             isAttacking = false;
             Move();
         }
+        animator.SetBool("isattacking", isAttacking);
+        animator.SetBool("move", moving);
     }
 
-     void CheckClick(){
+        IEnumerator kill(GameObject x)
+    {
+        //attacked = true;
+        // animator.SetTrigger("attack");
+        yield return new WaitForSeconds(0.6f);
+        audio.PlayOneShot(ataque);
+        GameObject.Destroy(x);
+        GameManager.NPCChars--;
+        animator.SetBool("attack", false);
+
+
+    }
+
+    void CheckClick(){
 
         if (Input.GetMouseButtonUp(0)){
 
@@ -64,16 +90,22 @@ public class PlayerMove : TacticsMove
                     if (t.selectable){
                         if(attacking){
                             Physics.Raycast(t.transform.position, Vector3.up, out hit, 1);
-                            if(hit.collider.tag=="NPC"){       
-                                hit.collider.gameObject.name = "DEAD";             
-                                GameObject.Destroy(hit.collider.gameObject);
+                            
+                            if (hit.collider.tag=="NPC"){
+                                transform.LookAt(hit.collider.transform);
+                                animator.SetBool("attack", true);
+
+                                StartCoroutine(kill(hit.collider.gameObject)); 
+                               
+                                hit.collider.gameObject.name = "DEAD";
                                 attackDone=true;
-                                GameManager.NPCChars--;
+                                
                                 GameManager.totalKills++;
                             }
                             else{                        
                                 MoveToTile(t);
                             }
+                            
                         }
                         else{                        
                             MoveToTile(t);

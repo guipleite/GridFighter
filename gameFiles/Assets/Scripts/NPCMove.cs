@@ -6,26 +6,37 @@ public class NPCMove : TacticsMove
 {
     GameObject target;
 
-    public bool isAttacking = false;
-    public bool canKill = false;
+    public AudioSource audio;
+    public AudioClip ataque;
+
+    private bool isAttacking = false;
+    private bool canKill = false;
     public static NPCMove instance;
+
+    public bool attacked;
+
+    private Animator animator;
+
+    int i ;
 
 
 	void Start () 
 	{
         instance = this;
         Init();
+        animator = GetComponentInChildren<Animator>();
 	}
 	
 	void Update () 
 	{
 
         if (!turn){
-
+            i = 0;
             return;
         }
 
         else if (!moving && !attacking){
+            isAttacking = false;
             FindNearestTarget();
             CalculatePath();
             FindSelectableTiles();
@@ -48,19 +59,45 @@ public class NPCMove : TacticsMove
             Move();
             actualTargetTile.target = false;
         }
+
+        animator.SetBool("isattacking", isAttacking);
+        animator.SetBool("move", moving);
 	}
 
+        IEnumerator kill(GameObject x)
+    {
+        animator.SetBool("attack",true);
+        yield return new WaitForSeconds(1.4f);
+        audio.PlayOneShot(ataque);
+        yield return new WaitForSeconds(0.2f);
+        GameObject.Destroy(x);
+        GameManager.PlayerChars--;
+        animator.SetBool("attack",false);
+    }
+
     void CalculatePath(){
+        Tile targetTile = GetTargetTile(target);
+        FindPath(targetTile); 
+
 
         if(canKill){
+        //     // attacked = true;
+        //     audio.PlayOneShot(ataque);
+        //     transform.LookAt(target.transform);
+        //     target.name = "DEAD";
+        //     //GameObject.Destroy(target);
+        //     canKill=false;
+        //     attackDone=true;
+        //     StartCoroutine(kill(target));
+        //     //GameManager.PlayerChars--;
+        //     //attacked = false;
+            transform.LookAt(target.transform);
+            StartCoroutine(kill(target));
             target.name = "DEAD";
-            GameObject.Destroy(target);
             canKill=false;
-            attackDone=true;
-            GameManager.PlayerChars--;
+            attackDone=true;    
         }
-        Tile targetTile = GetTargetTile(target);
-        FindPath(targetTile);   
+  
     }
 
     void FindNearestTarget(){
@@ -75,9 +112,13 @@ public class NPCMove : TacticsMove
             if (d < distance) {
                 distance = d;
                 nearest = obj;
-                if(d==1 && attacking){
+                if(d==1 && isAttacking){
+                
+                if(i==0){
+                    i++;
                     canKill = true;
-                    attacking=false;
+                }
+                attacking=false;
                 }
             }
         }

@@ -131,7 +131,7 @@ public class TacticsMove : MonoBehaviour
                 CalculateHeading(target);
                 velocity = heading * moveSpeed;
 
-                // TODO: ADD ANIMATIONS
+                
                 transform.forward = heading;
                 transform.position += velocity*Time.deltaTime;
             }
@@ -163,7 +163,7 @@ public class TacticsMove : MonoBehaviour
                 CalculateHeading(target);
                 velocity = heading * moveSpeed;
 
-                // TODO: ADD ANIMATIONS
+                
                 transform.forward = heading;
                 transform.position += velocity*Time.deltaTime;
             }
