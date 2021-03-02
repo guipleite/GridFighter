@@ -1,21 +1,21 @@
 <p align="center"><img src="./gameFiles/Assets/Menus/title.png" /></p>
 
-O GridFighter é um jogo de combate em turnos, onde o objetivo é defender uma cidade contra o ataque de monstros, para isso, é necessário vencer ondas de inimigos.
+GridFighter is a turn based combat game, where your objective is to defend a town from a monster attack, to do that you'll need to defeat waves of enemies .
 </br>
 
 ![alt text](./Capture.JPG)
 
-Jogue aqui: https://guipleite.itch.io/gridfighter
+Play here: https://guipleite.itch.io/gridfighter
 </br>
 
-Controles:
+Controls:
 
-    - Para se movimentar ou atacar, clique em um dos quadrados destacados em verde.
-    - Para pular a ação, clique no quadrado em cinza.
-    - Para mudar o ângulo da câmera, use as setas nas laterais da tela .
+    - To move or attack, click on one of the squares highlighted in green.
+    - To skip a turn, click on the gray square below the character.
+    - To rotate the camera, use the arows in the edges of the screen .
 
 
 
-Arquivos Incluindo os Store Assets:https://alinsperedu-my.sharepoint.com/:u:/g/personal/guilhermepl3_al_insper_edu_br/Eac-Kqr3qxRJsHKVA7UlfFoB1gnlFe-1BjDf_pillYlZIQ?e=DrEDL3
+All files including the Store Assets:https://alinsperedu-my.sharepoint.com/:u:/g/personal/guilhermepl3_al_insper_edu_br/Eac-Kqr3qxRJsHKVA7UlfFoB1gnlFe-1BjDf_pillYlZIQ?e=DrEDL3
 
 Guilherme Leite e Gabriel Monteiro 
