@@ -1,6 +1,6 @@
 <p align="center"><img src="./gameFiles/Assets/Menus/title.png" /></p>
 
-GridFighter is a turn based combat game, where your objective is to defend a town from a monster attack, to do that you'll need to defeat waves of enemies .
+GridFighter is a turn based combat game, where your objective is to defend a town from a monster attack, to do that you'll need to defeat waves of enemies.
 </br>
 
 ![alt text](./Capture.JPG)
